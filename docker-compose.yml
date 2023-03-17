@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  go:
+    container_name: ${PROJECT_NAME-go-debugger}-go
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - "./src:/app"
+    tty: true
+    user: "${USER-1000}:${USER-1000}"
