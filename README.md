@@ -5,6 +5,7 @@
 #### run these commands
 ```bash
 cp .env.example .env
+mkdir src
 docker-compose build
 docker-compose up
 ```
