@@ -1,2 +1,5 @@
 src/*
 .env
+.idea/
+.vscode/
+.fleet/

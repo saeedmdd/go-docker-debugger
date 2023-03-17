@@ -6,7 +6,9 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+      args:
+        WWWUSER: '${WWWUSER-1000}'
     volumes:
       - "./src:/app"
     tty: true
-    user: "${USER-1000}:${USER-1000}"
+    user: "${WWWUSER-1000}:${WWWUSER-1000}"
